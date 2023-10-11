@@ -1,5 +1,5 @@
 # VASARI_FHIR
-.json file containing information of our PACS based VASARI form
+.json file containing information of our PACS based VASARI form.
 
 We built a FHIR form containing the modified orginal VASARI questions described in our manuscript. 
 Feel free to use it for further research and if so, please cite the below mentioned ArXiv paper.
