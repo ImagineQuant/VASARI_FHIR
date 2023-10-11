@@ -1,0 +1,1693 @@
+{
+  "status": "draft",
+  "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|2.7"
+    ],
+    "tag": [
+      {
+        "code": "lformsVersion: 29.2.1"
+      }
+    ]
+  },
+  "item": [
+    {
+      "type": "group",
+      "required": false,
+      "text": "Brain",
+      "item": [
+        {
+          "type": "boolean",
+          "required": false,
+          "text": "Hemorrhage",
+          "item": [
+            {
+              "text": "Intrinsic hemorrhage in the tumor matrix. Any intrinsic foci of low signal on T2WI or high signal on T1WI. (Use Bo image if necessary for confirmation.)",
+              "type": "display",
+              "linkId": "undefined-help",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "boolean",
+          "required": false,
+          "text": "Calvarian remodeling",
+          "item": [
+            {
+              "text": "Erosion of inner table of skull (possibly a secondary sign of slow growth)",
+              "type": "display",
+              "linkId": "undefined-help",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "required": false,
+      "text": "Cyst",
+      "item": [
+        {
+          "type": "boolean",
+          "required": false,
+          "text": "Cyst(s)",
+          "item": [
+            {
+              "text": "Cysts are well defined, rounded, often eccentric regions of very bright T2W signal and low T1W signal essentially matching CSF signal intensity, with very thin, regular, smooth, nonenhancing or regularly enhancing walls, possibly with thin, regular, internal septations",
+              "type": "display",
+              "linkId": "undefined-help",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "required": false,
+      "text": "Tumor",
+      "item": [
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ],
+                "text": "Drop down"
+              }
+            }
+          ],
+          "required": false,
+          "text": "Tumor location",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "Frontal"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Temporal"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Insular"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Parietal"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Occipital"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Brainstem"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Cerebellum"
+              }
+            }
+          ],
+          "item": [
+            {
+              "text": "Location of lesion geographic epicenter; the largest component of the tumor (either CET or nCET) (select one only).",
+              "type": "display",
+              "linkId": "undefined-help",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ],
+                "text": "Drop down"
+              }
+            }
+          ],
+          "required": false,
+          "text": "Side of Tumor Epicenter",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "Right"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Center/Bilateral"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Left"
+              }
+            }
+          ],
+          "item": [
+            {
+              "text": "Side of lesion epicenter",
+              "type": "display",
+              "linkId": "undefined-help",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ],
+                "text": "Drop down"
+              }
+            }
+          ],
+          "required": false,
+          "text": "Eloquent Brain",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "None"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Speechmotor"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Speechreceptive"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Motor"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Vision"
+              }
+            }
+          ],
+          "item": [
+            {
+              "text": "Does any component of the tumor (CET or nCET) involve eloquent cortex or the immediate subcortical white matter of eloquent cortex (motor,language, vision)? (multiple selections acceptable).",
+              "type": "display",
+              "linkId": "undefined-help",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ],
+                "text": "Drop down"
+              }
+            }
+          ],
+          "required": false,
+          "text": "Multifocal or Multicentric",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "n/a"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Multifocal"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Multicentric"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Gliomatosis"
+              }
+            }
+          ],
+          "item": [
+            {
+              "text": "Multifocal is defined as having at least one region of tumor, either enhancing or nonenhancing, which is not contiguous with the dominant lesion and is outside the region of signal abnormality (edema) surrounding the dominant mass. This can be defined as those resulting from dissemination or growth by an established route, spread via commissural or other pathways, or via CSF channels or local metastases, whereas Multicentric are widely separated lesions in different lobes or different hemispheres that cannot be attributed to one of the previously mentioned pathways. Gliomatosis refers to generalized neoplastic transformation of the white matter of most of a hemisphere.",
+              "type": "display",
+              "linkId": "undefined-help",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ],
+                "text": "Drop down"
+              }
+            }
+          ],
+          "required": false,
+          "text": "T1/FLAIR Ratio Tumor",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "Expansive"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Mixed"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Infiltrative"
+              }
+            }
+          ],
+          "item": [
+            {
+              "text": "Expansive = size of pre-contrast T1 abnormality (exclusive of signal intensity) approximates size of FLAIR abnormality. Mixed = Size of T1 abnormality moderately less than FLAIR envelope; Infiltrative = Size of pre- contrast T1 abnormality much smaller than size of FLAIR abnormality. (Use T2 if FLAIR is not provided)",
+              "type": "display",
+              "linkId": "undefined-help",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "boolean",
+          "required": false,
+          "text": "Pial Invasion",
+          "item": [
+            {
+              "text": "Enhancement of the overlying pia in continuity with enhancing or non-enhancing tumor",
+              "type": "display",
+              "linkId": "undefined-help",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "boolean",
+          "required": false,
+          "text": "Ependymal Invasion",
+          "item": [
+            {
+              "text": "Invasion of any adjacent ependymal surface in continuity with enhancing or non-enhancing tumor matrix.",
+              "type": "display",
+              "linkId": "undefined-help",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "boolean",
+          "required": false,
+          "text": "Cortical Involvment",
+          "item": [
+            {
+              "text": "Non-enhancing or enhancing tumor extending to the cortical mantle, or cortex is no longer distinguishable relative to subjacent tumor.",
+              "type": "display",
+              "linkId": "undefined-help",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "boolean",
+          "required": false,
+          "text": "Deep WM Invasion",
+          "item": [
+            {
+              "text": "Enhancing or nCET tumor extending into the internal capsule, corpus callosum or brainstem.",
+              "type": "display",
+              "linkId": "undefined-help",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "boolean",
+          "required": false,
+          "text": "Satellites",
+          "item": [
+            {
+              "text": "A satellite lesion is an area of enhancement within the region of signal abnormality surrounding the dominant lesion but not contiguous in any part with the major tumor mass.",
+              "type": "display",
+              "linkId": "undefined-help",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ],
+                "text": "Drop down"
+              }
+            }
+          ],
+          "required": false,
+          "text": "Lesion Size",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "<0.5cm"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "0.5cm"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "1.0cm"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "1.5cm"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "2.0cm"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "2.5cm"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "3.0cm"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "3.5cm"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "4.0cm"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "4.5cm"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "5.0cm"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "5.5cm"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "6.0cm"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "6.5cm"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "7.0cm"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "7.5cm"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "8.0cm"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": ">8.0cm"
+              }
+            }
+          ],
+          "item": [
+            {
+              "text": "The markup should consist of a single irregular polygon which circumscribes the perimeter of the FLAIR abnormality on a single axial image that demonstrates the largest cross sectional area",
+              "type": "display",
+              "linkId": "undefined-help",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "required": false,
+      "text": "Edema",
+      "item": [
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ],
+                "text": "Drop down"
+              }
+            }
+          ],
+          "required": false,
+          "text": "Proportion of Edema",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "n/a"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "None (0%)"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "<5%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "6-33%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "34-67%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "68-95%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": ">95%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "All (100%)"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Indeterminate"
+              }
+            }
+          ],
+          "item": [
+            {
+              "text": "Non-enhancing tumor is defined as regions of T2W hyperintensity (less than the intensity of cerebrospinal fluid, with corresponding T1W hypointensity) that are associated with mass effect and architectural distortion, including blurring of the gray-white interface.",
+              "type": "display",
+              "linkId": "undefined-help",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "boolean",
+          "required": false,
+          "text": "Edema Crosses Midline",
+          "item": [
+            {
+              "text": "nCET crosses into contralateral hemisphere through white matter commissures (exclusive of herniated ipsilateral tissue).",
+              "type": "display",
+              "linkId": "undefined-help",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "required": false,
+      "text": "Enhancing Tumor",
+      "item": [
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ],
+                "text": "Drop down"
+              }
+            }
+          ],
+          "required": false,
+          "text": "Enhancement Quality",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "None"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Minimal/Mild"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Marked/Avid"
+              }
+            }
+          ],
+          "item": [
+            {
+              "text": "Qualitative degree of contrast enhancement is defined as having all or portions of the tumor that demonstrate significantly higher signal on the postcontrast T1W images compared to precontrast T1W images. Mild/ minimal = when barely discernable degree of enhancement is present relative to pre-contrast images. Marked/avid = obvious tissue enhancement.",
+              "type": "display",
+              "linkId": "undefined-help",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ],
+                "text": "Drop down"
+              }
+            }
+          ],
+          "required": false,
+          "text": "Proportion Enhancing",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "n/a"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "None (0%)"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "<5%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "6-33%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "34-67%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "65-95%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": ">95%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "All (100%)"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Indeterminate"
+              }
+            }
+          ],
+          "item": [
+            {
+              "text": "Visually, when scanning through the entire tumor volume, what proportion of the entire tumor would you estimate is enhancing.",
+              "type": "display",
+              "linkId": "undefined-help",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ],
+                "text": "Drop down"
+              }
+            }
+          ],
+          "required": false,
+          "text": "Thickness of enhancing margin",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "n/a"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "None"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Thin"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Thick/solid"
+              }
+            }
+          ],
+          "item": [
+            {
+              "text": "The scoring is not applicable if there is no contrast enhancement. If most of the enhancing rim Is thin, regular, and measures < 3 mm in thickness and has homogenous enhancement the grade is thin. If most of the rim demonstrates nodular and/or thick enhancement, the grade is thick. If there is only solid enhancement and no rim, the grade is solid.",
+              "type": "display",
+              "linkId": "undefined-help",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ],
+                "text": "Drop down"
+              }
+            }
+          ],
+          "required": false,
+          "text": "Definition of the enhancing margin",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "n/a"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Well-defined"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Poorly defined"
+              }
+            }
+          ],
+          "item": [
+            {
+              "text": "The scoring is not applicable (n/a) if there is no contrast enhancement. Assess if most of the outside margin of the enhancement is well defined or poorly defined. Are you able to easily trace the margin of enhancement?",
+              "type": "display",
+              "linkId": "undefined-help",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "boolean",
+          "required": false,
+          "text": "Enhancing Tumor Crosses Midline",
+          "item": [
+            {
+              "text": "Enhancing tissue crosses into contralateral hemisphere through white matter commisures (exclusive of herniated ipsilateral tissue).",
+              "type": "display",
+              "linkId": "undefined-help",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "required": false,
+      "text": "Non Enhancing Tumor",
+      "item": [
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ],
+                "text": "Drop down"
+              }
+            }
+          ],
+          "required": false,
+          "text": "Proportion nCET",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "n/a"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "None (0%)"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "<5%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "6-33%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "34-67%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "68-95%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": ">95%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "All (100%)"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Indeterminate"
+              }
+            }
+          ],
+          "item": [
+            {
+              "text": "Visually, when scanning through the entire tumor volume, what proportion of the entire tumor is estimated to represent non-enhancing tumor (not edema)?",
+              "type": "display",
+              "linkId": "undefined-help",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ],
+                "text": "Drop down"
+              }
+            }
+          ],
+          "required": false,
+          "text": "Proportion Necrosis",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "n/a"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "None (100%)"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "<5%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "6-33%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "34-67%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "68-95%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": ">95%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "All (100%)"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Indeterminate"
+              }
+            }
+          ],
+          "item": [
+            {
+              "text": "Necrosis is defined as a region within the tumor that does not enhance or shows markedly diminished enhancement, is high on T2W and proton density images, is low on T1W images, and has an irregular border).",
+              "type": "display",
+              "linkId": "undefined-help",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ],
+                "text": "Drop down"
+              }
+            }
+          ],
+          "required": false,
+          "text": "Definition of the enhancing margin (e.g. Grade III)",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "n/a"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Smooth"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Irregular"
+              }
+            }
+          ],
+          "item": [
+            {
+              "text": "If most of the outside non-enhancing margin of the tumor is well defined and smooth (geographic), versus if the margin is ill-defined and irregular.",
+              "type": "display",
+              "linkId": "undefined-help",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ],
+                "text": "Drop down"
+              }
+            }
+          ],
+          "required": false,
+          "text": "Diffusion",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "No Image"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Facillitaed"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Restricted"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Mixed"
+              }
+            }
+          ],
+          "item": [
+            {
+              "text": "Predominantly facilitated or restricted diffusion in the enhancing or nCET portion of the tumor. (Based on ADC map). [Rate CET alone when present, otherwise use nCET]. Indeterminate = unsure. Mixed = relatively equal proportion of facilitated and restricted. No ADC maps = use no-images. Proportion of tissue not relevant.",
+              "type": "display",
+              "linkId": "undefined-help",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "boolean",
+          "required": false,
+          "text": "nCET Crosses Midline",
+          "item": [
+            {
+              "text": "(2) No nCET crosses into contralateral hemisphere through white matter commissures (exclusive of herniated ipsilateral tissue).",
+              "type": "display",
+              "linkId": "undefined-help",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "text": "Help-Button",
+                    "coding": [
+                      {
+                        "code": "help",
+                        "display": "Help-Button",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "required": false,
+      "text": "Resection",
+      "item": [
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ],
+                "text": "Drop down"
+              }
+            }
+          ],
+          "required": false,
+          "text": "Extent resection of vasogenic edema",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "n/a"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "None (0%)"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "<5%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "6-33%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "34-67%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "68-95%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": ">95%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "All (100%)"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Indeterminate"
+              }
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ],
+                "text": "Drop down"
+              }
+            }
+          ],
+          "required": false,
+          "text": "Extent of resection of enhancing Tumor",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "n/a"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "None (0%)"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "<5%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "6-33%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "34-67%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "68-95%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": ">95%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "All (100%)"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Indeterminate"
+              }
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ],
+                "text": "Drop down"
+              }
+            }
+          ],
+          "required": false,
+          "text": "Extent resection of nCET",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "n/a"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "None (0%)"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "<5%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "6-33%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "34-67%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "68-95%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": ">95%"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "All (100%)"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Indeterminate"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "required": false,
+      "text": "Report"
+    }
+  ]
+}
